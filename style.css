@@ -2,3 +2,64 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color:  #EEF9BF;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 63PX;
+
+    margin-top: 40px;
+    margin-bottom: 47px;
+}
+
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+}
+
+.area-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 117px;
+    height: 146px;
+    background: #A7E9AF;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px 34px 34px 0px;
+    border: 1px solid #99CEA8;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.aparecer{
+    display: block;
+}
+
+.desaparecer{
+    display: none;
+}
