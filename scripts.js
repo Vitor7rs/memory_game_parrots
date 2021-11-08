@@ -22,22 +22,22 @@ let cardsLista=[];
 for(let i = 0; i <=((totalCartas/2)-1); i++ ){
     
     cardsLista.push(`
-        <li class='card' onclick="turno(this)">
-            <div class='frente-card'>
+        <li class='card' onclick="turno(this)" data-identifier="card">
+            <div class='frente-card' data-identifier="front-face">
                 <img src='img/front.png' alt=''>
             </div>      
-            <div class='img desaparecer'>
+            <div class='img desaparecer' data-identifier="back-face">
                 ${imagem[i]}
             </div>
         </li>`)
            
     cardsLista.push(`
-        <li class='card' onclick="turno(this)">
-            <div class='frente-card'>
+        <li class='card' onclick="turno(this)" data-identifier="card">
+            <div class='frente-card' data-identifier="front-face">
                 <img src='img/front.png' alt=''>
             </div>
                 
-            <div class='img desaparecer'>
+            <div class='img desaparecer' data-identifier="back-face">
                 ${imagem[i]}
             </div>
         </li>`)
@@ -75,7 +75,6 @@ for (let i = 0; i < cardsLista.length; i++) {
         verificar(cartaVirada[0], cartaVirada[1]);
         cartaVirada=[]
     }
-    
  }
 
  // verificar se as cartas são iguais e chamar a funçao que vira ela, caso nesessário
@@ -85,11 +84,16 @@ function verificar(carta1, carta2){
     
     if(frente1 === frente2){
         carta1.removeAttribute('onclick');
+        carta2.removeAttribute('onclick');
         console.log(carta1, carta2);
         fimDeJogo+=2;
         setTimeout(vitoria, 1000);
     }
-    else setTimeout(virar, 1000, carta1, carta2);
+    else {setTimeout(virar, 1000, carta1, carta2)
+        
+        
+    
+    }
 }
 
 // vira as cartas, caso nao tenham dado match
