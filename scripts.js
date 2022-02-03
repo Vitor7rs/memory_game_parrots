@@ -89,10 +89,7 @@ function verificar(carta1, carta2){
         fimDeJogo+=2;
         setTimeout(vitoria, 1000);
     }
-    else {setTimeout(virar, 1000, carta1, carta2)
-        
-        
-    
+    else {setTimeout(virar, 1000, carta1, carta2)               
     }
 }
 
