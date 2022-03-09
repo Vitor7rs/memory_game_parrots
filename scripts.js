@@ -36,7 +36,6 @@ for(let i = 0; i <=((totalCartas/2)-1); i++ ){
             <div class='frente-card' data-identifier="front-face">
                 <img src='img/front.png' alt=''>
             </div>
-                
             <div class='img desaparecer' data-identifier="back-face">
                 ${imagem[i]}
             </div>
@@ -47,6 +46,7 @@ for(let i = 0; i <=((totalCartas/2)-1); i++ ){
 function embaralhador() { 
 	return Math.random() - 0.5; 
 }
+
 cardsLista.sort(embaralhador);
 
 //colocando lista embaralhada na tela
@@ -71,7 +71,6 @@ for (let i = 0; i < cardsLista.length; i++) {
     cartaVirada.push(atras);
 
     if(cartaVirada.length===2){
-
         verificar(cartaVirada[0], cartaVirada[1]);
         cartaVirada=[]
     }
