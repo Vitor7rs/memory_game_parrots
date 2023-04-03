@@ -3,7 +3,7 @@
   <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/v0/svg-twitter/1f99c.svg" alt="Parrot Card Game" width="70">
 <br>
 <br>
-Parrot Card Game (Memory Game) 🃏🧠
+Parrot Card Game (Memory Game) 🧠
 </h1>
 
 <p align="center">Um jogo da memória temático com aleatoridade, efeitos e transição, responsividade e papagaios dançantes!</p>
