@@ -9,7 +9,7 @@ Parrot Card Game (Memory Game) 🧠
 <p align="center">Um jogo da memória temático com aleatoridade, efeitos e transição, responsividade e papagaios dançantes!</p>
 
 <p align="center">
- Link teste projeto:
+ Teste o projeto aqui:
 https://vitor7rs.github.io/memory_game_parrots/
 </p>
 
